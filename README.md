@@ -1,3 +1,39 @@
+## Rubric points
+---  
+
+## Compilation
+### The code compiles correctly.  
+- Some files are changed   
+PID.cpp  : It is the PID controller implementation for vehicle longitudinal / lateral control.   
+main.cpp : It it the vehicle longitudinal / lateral controller using PID controller.
+
+
+## Implementation
+### The PID procedure follows what was taught in the lessons.  
+The longitudinal / lateral motion control using a PID controller is implemented by the following method.  
+- lateral controller   
+1. P-error, I-error, and D-error are calculated using the CTE value, which is the lateral position error from the center of the lane.  
+2. Using each error value and P-gain, I-gain, and D-gain, the final steering input value is calculated as follows.  
+-> `steer_value = -p_error * Kp - i_error * Ki - d_error * Kd`
+
+- longitudinal controller   
+1. P-error, I-error, and D-error are calculated using the difference value between desired speed value in the range of 20 mph to 35 mph and the current speed.  
+2. The desired speed decreases when the CTE value is more than a certain value, and increases when the lane is well maintained.
+2. Using each error value and P-gain, I-gain, and D-gain, the final throttle input value is calculated as follows.  
+-> `throttle_value = -p_error * Kp - i_error * Ki - d_error * Kd`
+
+## Reflection
+### Describe the effect each of the P, I, D components had in your implementation.
+- P-gain
+1. 
+
+
+
+
+
+
+
+
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
