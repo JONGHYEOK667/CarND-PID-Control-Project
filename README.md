@@ -50,22 +50,30 @@ If only P-gain is used, overshoot can occur and unstable movement is shown.
 
 However, if you decrease the P-gain value to reduce this movement, it will not follow the corner well as follows.   
 
+
 ### [P-gain, I-gain, D-gain] = [0.05, 0, 0] 
 
 | start | curv1 | curv2 | 
 |:--------:|:------:|:---------------:|
 | ![alt text][image2] | ![alt text][image3] | ![alt text][image4]  | 
 
+- D-gain  
+If D-gain is added, it is possible to calculate the input by changing the error. Therefore, straight running performance and cornering performance are improved.
+
 ### [P-gain, I-gain, D-gain] = [0.155, 0, 3] 
 | start | curv1 | curv2 | curv3 |
 |:--------:|:------:|:---------------:|:----:|    
 | ![alt text][image5] | ![alt text][image6] | ![alt text][image7]  | ![alt text][image8]|
 
-
+- I-gain  
+Adding I-gain improves the steady-state error. Therefore, it makes it easier to drive the center of the car when cornering.
 ### [P-gain, I-gain, D-gain] = [0.155, 0.0008, 3] 
 | start | curv1 | curv2 | curv3 |
 |:--------:|:------:|:---------------:|:----:|    
-| ![alt text][image9] | ![alt text][image10] | ![alt text][image11]  | ![alt text][image12]|
+| ![alt text][image9] | ![alt text][image10] | ![alt text][image11]  | ![alt text][image12]|  
+
+
+### Describe how the final hyperparameters were chosen.
 
 
 
