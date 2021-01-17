@@ -40,7 +40,7 @@ int main() {
    */
 
   // 0.155 0.0008 3
-  double kp_steer = 0.05;
+  double kp_steer = 0.155;
   double ki_steer = 0.0008;
   double kd_steer = 3;
 
