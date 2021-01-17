@@ -38,9 +38,11 @@ int main() {
   /**
    * TODO: Initialize the pid variable.
    */
-  double kp_steer = 0.15;
-  double ki_steer = 0.0001;
-  double kd_steer = 4.0;
+
+  // 0.155 0.0008 3
+  double kp_steer = 0.05;
+  double ki_steer = 0.0008;
+  double kd_steer = 3;
 
   pid.Init(kp_steer, ki_steer, kd_steer);
   std::cout << "pid lateral controller initialized" << std::endl;
@@ -48,7 +50,7 @@ int main() {
   // throttle pid controller initialize
   PID pid_throttle;
 
-  double kp_throttle = 0.5;
+  double kp_throttle = 0.2;
   double ki_throttle = 0.0005;
   double kd_throttle = 0.8;
 
@@ -90,7 +92,7 @@ int main() {
           
           if (abs(cte) > 0.7) {
             
-              des_speed -= 0.05;
+              des_speed -= 0.01;
           
           }
           else {
