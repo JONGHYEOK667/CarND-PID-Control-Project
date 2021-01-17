@@ -78,8 +78,18 @@ PID gain tuning was performed through the manual method, and tuning was performe
 - P-gain selection within stable range
 - Additional selection of D-gain for track driving
 - Additional selection of I-gain to improve the track center driving performance
-- Fine tuning for each P-gain, I-gain, D-gain
+- Fine tuning for each P-gain, I-gain, D-gain  
 
+
+
+
+## Reflection
+### The vehicle must successfully drive a lap around the track.
+- clear 
+
+
+
+-----
 
 
 
