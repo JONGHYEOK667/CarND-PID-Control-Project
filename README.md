@@ -1,3 +1,21 @@
+[//]: # (Image References)
+
+[image1]: ./Gif/P1_1.gif "P1_1"
+[image2]: ./Gif/P05_1.gif "P05_1"
+[image3: ./Gif/P05_2.gif "P05_2"
+[image4]: ./Gif/P05_3.gif "P05_3"
+
+[image5]: ./Gif/PD_1.gif "PD_1"
+[image6]: ./Gif/PD_2.gif "PD_2"
+[image7]: ./Gif/PD_3.gif "PD_3"
+[image8]: ./Gif/PD_4.gif "PD_4"
+
+[image9]: ./Gif/PID_1.gif "PID_1"
+[image10]: ./Gif/PID_2.gif "PID_2"
+[image11]: ./Gif/PID_3.gif "PID_3"
+[image12]: ./Gif/PID_4.gif "PID_4"
+
+
 ## Rubric points
 ---  
 
@@ -25,9 +43,8 @@ The longitudinal / lateral motion control using a PID controller is implemented 
 ## Reflection
 ### Describe the effect each of the P, I, D components had in your implementation.
 - P-gain
-1. 
-
-
+1. If only P-gain is used, overshoot can occur and unstable movement is shown.
+![alt text][image1]
 
 
 
