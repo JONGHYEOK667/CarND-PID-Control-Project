@@ -73,7 +73,12 @@ Adding I-gain improves the steady-state error. Therefore, it makes it easier to 
 | ![alt text][image9] | ![alt text][image10] | ![alt text][image11]  | ![alt text][image12]|  
 
 
-### Describe how the final hyperparameters were chosen.
+### Describe how the final hyperparameters were chosen. [P-gain, I-gain, D-gain] = [0.155, 0.0008, 3]
+PID gain tuning was performed through the manual method, and tuning was performed in the following procedure.
+- P-gain selection within stable range
+- Additional selection of D-gain for track driving
+- Additional selection of I-gain to improve the track center driving performance
+- Fine tuning for each P-gain, I-gain, D-gain
 
 
 
